@@ -2,9 +2,14 @@ body {
   background-color: #343535;
 }
 
+#profile{
+  display: block;
+  margin: 30vh auto 0;
+}
+
 .maintain {
   text-align: center;
-  margin-top: calc(44vh - 32px);
+  margin-top: 20px;
   color: white;
   font-family: monospace;
   font-weight: 800;
