@@ -1,0 +1,17 @@
+body {
+  background-color: #343535;
+}
+
+.maintain {
+  text-align: center;
+  margin-top: calc(46vh - 32px);
+  color: white;
+  font-family: monospace;
+  font-weight: 800;
+  font-size: 64px;
+}
+
+#para {
+  margin-top: 10px;
+  font-size: 16px;
+}
