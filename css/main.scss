@@ -16,6 +16,9 @@ html[data-theme='dark'] {
 }
 
 html[data-theme='light'] {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    
     --bg: #F2F2F2;
     --primary: #313A40;
     --secondary: #575E63;
@@ -24,6 +27,7 @@ html[data-theme='light'] {
     --neu-two: #ffffff;
     --logo_nav: url(../asset/logo_nav_light.png);
     --icon_nav: url(../asset/icon_nav_light.png);
+    --hero_img: url(../asset/hero_img_light.png);
 }
 
 body {
