@@ -18,7 +18,7 @@ html[data-theme='dark'] {
 html[data-theme='light'] {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
-    
+
     --bg: #F2F2F2;
     --primary: #313A40;
     --secondary: #575E63;
@@ -299,7 +299,7 @@ footer {
                 display: inline-block;
                 width: 30.35px;
                 height: 27px;
-                background: url(../asset/icon_nav_dark.png) no-repeat center center;
+                background: var(--icon_nav) no-repeat center center;
                 background-size: contain;
                 margin-right: 18.65px;
             }
