@@ -268,7 +268,7 @@ nav .menu label {
 }
 
 .intro .hero_text p {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 24px;
   line-height: 34px;
   text-align: center;
@@ -344,8 +344,8 @@ nav .menu label {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: hero_img;
-    margin: 157.85px auto auto 100px;
-    width: calc(750px + 96px);
+    margin: 127.85px auto auto 100px;
+    width: calc(580px + 96px);
     height: 687px;
   }
   .intro .hero_text {
@@ -355,17 +355,17 @@ nav .menu label {
     margin: 248px 0 267px;
   }
   .intro .hero_text p {
-    margin-left: 65px;
+    margin-left: 120px;
     text-align: left;
-    font-size: 53px;
-    line-height: 65px;
+    font-size: 48px;
+    line-height: 59px;
   }
   .intro .hero_text span {
-    margin: 41px 0 41px 65px;
+    margin: 41px 0 41px 120px;
   }
   .intro .hero_text .hero_social {
     text-align: left;
-    margin-left: 45px;
+    margin-left: 100px;
     margin-top: 57px;
   }
   .intro .hero_text .hero_social a i {
