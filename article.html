@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azolia</title>
+    <link rel="icon" type="image/png" href="asset/favicon-32x32.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo"></div>
+            <div class="icon"></div>
+            <div class="menu">
+                <ul>
+                    <li><i class="fas fa-smile"></i></i>About</li>
+                    <li><i class="fas fa-pencil-ruler"></i></i>Works</li>
+                    <li><i class="fas fa-layer-group"></i></i>Collections</li>
+                </ul> 
+                <span></span>
+                <i class="fas fa-bars bar"></i>
+                <li>Dark Mode</li>
+                <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+            </div>
+        </nav>
+        <article>
+            <h1>
+                The Design Team
+            </h1>
+            <h2>
+                Comic series that follows the story of Petunia, a Mexican designer that just moved to the Bay Area to work in a tech startup.
+            </h2>
+            <img src="asset/work_img_02.jpg" alt="" class="article">
+            <div class="overview">
+                <div class="overview_left">
+                    <h3>Overview</h3>
+                    <p> SHEchange enables consumers to make ethical buying decisions and collectively influence companies to change unethical policies and behaviors. Users can search, browse, and compare personal care and fashion companies to see how they perform in areas such as animal rights, gender and ethnic diversity, or environmental sustainability. Users can also activate the SHEchange Chrome extension while shopping online in order to quickly and conveniently view company data on the products they are considering.
+                        <br><br>
+                        I collaborated with a team of designers to restructure and redesign the existing SHEchange website and Chrome extension. <b>Our goal was to enable users to easily find, understand, and act upon company data.</b>
+                    </p>
+                </div>
+                <span></span>
+                <div class="overview_right">
+                    <h3>Role</h3>
+                    <p>UX Research, Information Architecture, Interaction Design, UI Design</p>
+                    <h3>Timeframe</h3>
+                    <p>November 2018 - January 2019</p>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Challenge</h3>
+                <p>
+                    People want to support businesses that are aligned with the values they care about and boycott the ones that don’t. Unfortunately, consumers often don’t have access to reliable information regarding a company’s ethical performance or know how to influence companies to implement policy changes. SHEchange’s mission is to eliminate these barriers and empower users to demand that companies respect all people and respect the earth. In order to achieve this vision and grow their user base, however, they needed to address some usability issues in their existing product.
+                    <br><br>
+                    Our high-level objectives (which we further defined based on research insights) were to:
+                </p>
+                <img src="asset/work_img_01.jpg" alt="" class="content">
+                <h4 class="caption">Caption for the picture of a telescope as you can see above.</h4>
+                <span class="caption"></span>
+                <h3>Research & Discover</h3>
+                <p>
+                    Because of the nascent nature of the product, our team had limited data regarding users and their engagement with website and Chrome extension. In order to uncover and prioritize the most salient user needs and usability issues, we employed the following research methods:
+                    <br><br>
+                    Through our directed interviews we learned some key insights about ethically-minded shoppers who might be inclined to use a product like SHEchange:
+                    <br><br>
+                    They are often more motivated to boycott unethical companies than to actively support ethical ones
+                    They use word-of-mouth, social media, and news sources to gather information about companies' behaviors and ethics.
+                </p>
+                <div class="logo_article"></div>
+                <span></span>
+            </div>
+
+        </article>
+        <div class="collection">
+            <h2>Collections</h2>
+            <div class="collection_item">
+                <a href="#">School Projects</a>
+                <a href="#">Clients Projects</a>
+                <a href="#">Personal Projects</a>
+                <a href="#">Commercial Photography</a>
+                <a href="#">Random shots</a>
+                <a href="#">Logos</a>
+            </div>
+            <span></span>
+        </div>
+        <footer>
+            <div class="footer_right">
+                <h1><div class="footer_logo"></div>Azolia.Design</h1>
+                <a href="#"><i class="fas fa-smile"></i>About</a>
+                <a href="#"><i class="fas fa-pencil-ruler"></i>Works</a>
+            </div>
+            <div class="footer_left">
+                <h1>Let's get in touch!</h1>
+                <a href="#"><i class="fas fa-envelope"></i>contact@azolia.design</a>
+                <a href="#"><i class="fas fa-phone"></i>+84 909 000 999</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+
+        var checkbox = document.querySelector('input[name=theme]');
+
+        checkbox.addEventListener('change', function() {
+            if(this.checked) {
+                trans()
+                document.documentElement.setAttribute('data-theme', 'light')
+            } else {
+                trans()
+                document.documentElement.setAttribute('data-theme', 'dark')
+            }
+        })
+
+        let trans = () => {
+            document.documentElement.classList.add('transition');
+            window.setTimeout(() => {
+                document.documentElement.classList.remove('transition')
+            }, 1000)
+        } 
+
+    </script>
+</body>
+</html>
