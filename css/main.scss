@@ -148,6 +148,7 @@ nav {
             margin-left: 30px;
             color: var(--nav-color); 
             font-size: 20px;
+            display: none;
         }
 
         li {
@@ -158,11 +159,41 @@ nav {
             height: 0;
             width: 0;
             visibility: hidden;
-            display: none;
         }
-
+    
         label {
+            float: right;
+            cursor: pointer;
+            text-indent: -9999px;
+            width: 31px;
+            height: 18px;
+            background: #4395FF;
             display: none;
+            border-radius: 9px;
+            position: relative;
+            margin-left: 18px;
+            display: block;
+        }
+    
+        label:after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            width: 14px;
+            height: 14px;
+            background: #fff;
+            border-radius: 90px;
+            transition: 0.3s;
+        }
+    
+        input:checked + label {
+            background: var(--accent);
+        }
+    
+        input:checked + label:after {
+            right: calc(100% - 30px);
+            transform: translateX(-100%);
         }
     }    
 }
@@ -256,40 +287,8 @@ nav {
             }
         
             label {
-                float: right;
-                cursor: pointer;
-                text-indent: -9999px;
-                width: 31px;
-                height: 18px;
-                background: #4395FF;
                 display: block;
-                border-radius: 9px;
-                position: relative;
-                margin-left: 18px;
             }
-        
-            label:after {
-                content: '';
-                position: absolute;
-                top: 2px;
-                right: 2px;
-                width: 14px;
-                height: 14px;
-                background: #fff;
-                border-radius: 90px;
-                transition: 0.3s;
-            }
-        
-            input:checked + label {
-                background: var(--accent);
-            }
-        
-            input:checked + label:after {
-                right: calc(100% - 30px);
-                transform: translateX(-100%);
-            }
-        
-
         }
     }
 }
