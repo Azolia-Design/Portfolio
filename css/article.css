@@ -47,7 +47,7 @@ article .overview {
   -webkit-box-shadow: inset 10px 10px 20px var(--neu-one), inset -10px -10px 20px var(--neu-two);
           box-shadow: inset 10px 10px 20px var(--neu-one), inset -10px -10px 20px var(--neu-two);
   border-radius: 10px;
-  padding: 60px 25px 12px 25px;
+  padding: 60px 25px 12px;
 }
 
 article .overview .overview_left {
@@ -168,5 +168,179 @@ article .content span {
   background-color: var(--accent);
   margin: 80px auto 100px;
   border-radius: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+  article {
+    margin: 140px auto 0;
+  }
+  article h1 {
+    font-size: 48px;
+    line-height: 59px;
+    max-width: 540px;
+  }
+  article h2 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 100px;
+    max-width: 540px;
+  }
+  article img.article {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto 100px;
+  }
+  article .overview {
+    margin: 20px 0 0;
+    width: calc(100% - 60px);
+    padding: 80px 40px 0;
+  }
+  article .overview .overview_content {
+    max-width: 900px;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% auto auto;
+        grid-template-columns: 60% auto auto;
+  }
+  article .overview .overview_content .overview_left {
+    margin: 0;
+    max-width: 470px;
+  }
+  article .overview .overview_content .overview_left h3 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  article .overview .overview_content .overview_left p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 167%;
+    margin-bottom: 80px;
+  }
+  article .overview .overview_content span {
+    display: block;
+    width: 2px;
+    height: calc(100% - 80px);
+    margin: 0 48px 0 48px;
+    background-color: var(--accent);
+  }
+  article .overview .overview_content .overview_right {
+    margin: 0;
+    max-width: 200px;
+  }
+  article .overview .overview_content .overview_right h3 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+  article .overview .overview_content .overview_right p {
+    font-size: 18px;
+    line-height: 167%;
+    margin-bottom: 60px;
+  }
+  article .content {
+    margin: 120px 30px 0;
+    max-width: 680px;
+  }
+  article .content h3 {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 36px;
+  }
+  article .content p {
+    font-size: 18px;
+    line-height: 167%;
+    margin-bottom: 0;
+    padding-bottom: 100px;
+  }
+  article .content img.content {
+    width: calc(100% + 80px);
+    max-width: 880px;
+    margin: 20px -40px 30px;
+  }
+  article .content h4.caption {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 20px;
+  }
+  article .content span.caption {
+    display: block;
+    width: calc(100% - 24px);
+    height: 2px;
+    background-color: var(--accent);
+    margin: 24px 0 80px 20px;
+    border-radius: 1px;
+  }
+  article .content .logo_article {
+    width: 17.23px;
+    height: 16px;
+  }
+  article .content span {
+    margin: 100px auto 140px;
+  }
+}
+
+@media only screen and (min-width: 1660px) {
+  article {
+    margin: 200px auto 0;
+  }
+  article h1 {
+    font-size: 64px;
+    line-height: 78px;
+    max-width: 670px;
+    margin-bottom: 36px;
+  }
+  article h2 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 120px;
+    max-width: 670px;
+  }
+  article img.article {
+    max-width: 1368px;
+  }
+  article .overview {
+    margin: 50px 0 0;
+    width: 100%;
+    padding: 80px 70px 0;
+  }
+  article .overview .overview_content {
+    max-width: 980px;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+  }
+  article .overview .overview_content .overview_left {
+    max-width: 677px;
+  }
+  article .overview .overview_content span {
+    height: calc(100% - 105px);
+    margin: 0 60px 0 60px;
+  }
+  article .overview .overview_content .overview_right {
+    max-width: 240px;
+  }
+  article .content {
+    margin: 140px 0 0;
+    max-width: 700px;
+  }
+  article .content p {
+    padding-bottom: 128px;
+  }
+  article .content img.content {
+    width: calc(100% + 200px);
+    max-width: 900px;
+    margin: 22px -100px 30px;
+  }
+  article .content h4.caption {
+    margin: 0 40px;
+  }
+  article .content span.caption {
+    width: calc(100% - 40px);
+    margin: 24px 0 100px 40px;
+  }
+  article .content span {
+    margin: 128px auto 180px;
+  }
 }
 /*# sourceMappingURL=article.css.map */
