@@ -63,7 +63,7 @@
 
         .hero_img {
             margin: 126px auto 126.06px;
-            height: calc(407.94px + 58px);
+            height: calc(407.94px + 58px);            
         }
 
         .hero_text {
@@ -96,6 +96,7 @@
             margin: 127.85px auto auto 100px;
             width: calc(580px + 96px);
             height: 687px;
+            transform: scaleX(-1);
         }
 
         .hero_text {

@@ -94,6 +94,8 @@
     margin: 127.85px auto auto 100px;
     width: calc(580px + 96px);
     height: 687px;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
   }
   .intro .hero_text {
     -ms-grid-row: 1;

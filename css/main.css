@@ -10,7 +10,7 @@ html[data-theme='dark'] {
   --neu-two: #38434A;
   --logo_nav: url(../asset/logo_nav_dark.png);
   --icon_nav: url(../asset/icon_nav_dark.png);
-  --hero_img: url(../asset/hero_img_dark.png);
+  --hero_img: url(../asset/peep_dark_2.png);
 }
 
 html[data-theme='light'] {
@@ -25,7 +25,7 @@ html[data-theme='light'] {
   --neu-two: #ffffff;
   --logo_nav: url(../asset/logo_nav_light.png);
   --icon_nav: url(../asset/icon_nav_light.png);
-  --hero_img: url(../asset/hero_img_light.png);
+  --hero_img: url(../asset/peep_light.png);
 }
 
 body {
