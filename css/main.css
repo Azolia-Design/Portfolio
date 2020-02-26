@@ -1,6 +1,7 @@
 html[data-theme='dark'] {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
+  scroll-behavior: smooth;
   --bg: #313A40;
   --primary: #F2F2F2;
   --secondary: #D9CDBF;
@@ -8,6 +9,8 @@ html[data-theme='dark'] {
   --accent: #1A2226;
   --neu-one: #2A3136;
   --neu-two: #38434A;
+  --neu-hl: #414e56;
+  --neu-sd: #212629;
   --logo_nav: url(../asset/logo_nav_dark.png);
   --icon_nav: url(../asset/icon_nav_dark.png);
   --hero_img: url(../asset/peep_dark_2.png);
@@ -16,13 +19,16 @@ html[data-theme='dark'] {
 html[data-theme='light'] {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
+  scroll-behavior: smooth;
   --bg: #F2F2F2;
   --primary: #313A40;
   --secondary: #1A2226;
   --nav-color: #313A40;
   --accent: #C4C4C4;
   --neu-one: #cecece;
-  --neu-two: #ffffff;
+  --neu-two: #fcfcfc;
+  --neu-hl: #ffffff;
+  --neu-sd: #c3c3c3;
   --logo_nav: url(../asset/logo_nav_light.png);
   --icon_nav: url(../asset/icon_nav_light.png);
   --hero_img: url(../asset/peep_light.png);
@@ -60,8 +66,8 @@ nav {
   display: grid;
   -ms-grid-columns: 1fr auto 1fr;
       grid-template-columns: 1fr auto 1fr;
-  -webkit-box-shadow: 10px 10px 20px var(--neu-one), -10px -10px 20px var(--neu-two);
-          box-shadow: 10px 10px 20px var(--neu-one), -10px -10px 20px var(--neu-two);
+  -webkit-box-shadow: 10px 10px 20px var(--neu-one), -10px -10px 20px var(--neu-two), inset 1px 1px 2px var(--neu-hl), inset -1px -1px 2px var(--neu-sd);
+          box-shadow: 10px 10px 20px var(--neu-one), -10px -10px 20px var(--neu-two), inset 1px 1px 2px var(--neu-hl), inset -1px -1px 2px var(--neu-sd);
   border-radius: 40px;
 }
 
@@ -204,8 +210,8 @@ nav .menu input:checked + label:after {
   nav {
     margin-top: 27px;
     height: 72px;
-    -webkit-box-shadow: 14px 14px 28px var(--neu-one), -14px -14px 28px var(--neu-two);
-            box-shadow: 14px 14px 28px var(--neu-one), -14px -14px 28px var(--neu-two);
+    -webkit-box-shadow: 12px 12px 24px var(--neu-one), -12px -12px 24px var(--neu-two), inset 1px 1px 2px var(--neu-hl), inset -1px -1px 2px var(--neu-sd);
+            box-shadow: 12px 12px 24px var(--neu-one), -12px -12px 24px var(--neu-two), inset 1px 1px 2px var(--neu-hl), inset -1px -1px 2px var(--neu-sd);
   }
   nav .logo {
     width: 135.82px;
@@ -228,10 +234,6 @@ nav .menu input:checked + label:after {
 }
 
 @media only screen and (min-width: 1660px) {
-  nav {
-    -webkit-box-shadow: 16px 16px 32px var(--neu-one), -16px -16px 32px var(--neu-two);
-            box-shadow: 16px 16px 32px var(--neu-one), -16px -16px 32px var(--neu-two);
-  }
   nav .logo {
     margin: 22px 0 0 65px;
   }
@@ -301,8 +303,8 @@ nav .menu input:checked + label:after {
   display: block;
   width: 100%;
   height: 8px;
-  -webkit-box-shadow: inset 2px 2px 4px var(--neu-one), inset -2px -2px 4px var(--neu-two);
-          box-shadow: inset 2px 2px 4px var(--neu-one), inset -2px -2px 4px var(--neu-two);
+  -webkit-box-shadow: inset 2px 2px 4px var(--neu-one), inset -2px -2px 4px var(--neu-two), 1px 1px 1px var(--neu-hl), -1px -1px 1px var(--neu-sd);
+          box-shadow: inset 2px 2px 4px var(--neu-one), inset -2px -2px 4px var(--neu-two), 1px 1px 1px var(--neu-hl), -1px -1px 1px var(--neu-sd);
   border-radius: 5px;
 }
 
@@ -440,8 +442,8 @@ html.transition,
 html.transition *,
 html.transition *:before,
 html.transition *:after {
-  -webkit-transition: all 750ms !important;
-  transition: all 750ms !important;
+  -webkit-transition: all 350ms !important;
+  transition: all 350ms !important;
   -webkit-transition-delay: 0 !important;
           transition-delay: 0 !important;
 }

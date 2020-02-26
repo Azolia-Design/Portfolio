@@ -189,9 +189,52 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  -webkit-box-shadow: 5px 5px 10px var(--neu-one), -5px -5px 10px var(--neu-two);
-          box-shadow: 5px 5px 10px var(--neu-one), -5px -5px 10px var(--neu-two);
   border-radius: 5px;
+  -webkit-transition: opacity 3s;
+  transition: opacity 3s;
+  position: relative;
+}
+
+.work .work_item .work_text a.button::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 5px 5px 10px var(--neu-one), inset -5px -5px 10px var(--neu-two), 1px 1px 1px var(--neu-hl), -1px -1px 1px var(--neu-sd);
+          box-shadow: inset 5px 5px 10px var(--neu-one), inset -5px -5px 10px var(--neu-two), 1px 1px 1px var(--neu-hl), -1px -1px 1px var(--neu-sd);
+  opacity: 0;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+
+.work .work_item .work_text a.button::after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 10px var(--neu-one), -5px -5px 10px var(--neu-two), inset 1px 1px 1px var(--neu-hl), inset -1px -1px 1px var(--neu-sd);
+          box-shadow: 5px 5px 10px var(--neu-one), -5px -5px 10px var(--neu-two), inset 1px 1px 1px var(--neu-hl), inset -1px -1px 1px var(--neu-sd);
+  opacity: 1;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+
+.work .work_item .work_text a.button:hover::before {
+  opacity: .5;
+}
+
+.work .work_item .work_text a.button:focus::before {
+  opacity: 1;
+}
+
+.work .work_item .work_text a.button:hover::after {
+  opacity: 0;
 }
 
 .work .work_item:nth-child(3) a .work_img {

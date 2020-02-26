@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azolia</title>
+    <link rel="icon" type="image/png" href="asset/favicon-32x32.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo"><a href="index.html"></a></div>
+            <div class="icon"><a href="index.html"></a></div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="http://azolia.design/#work">Works</a>
+                    </li>
+                    <li>
+                        <a href="http://azolia.design/#collections">Collections</a>
+                    </li>
+                </ul> 
+                <span></span>
+                <i class="fas fa-bars bar"></i>
+                <li>Dark Mode</li>
+                <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+            </div>
+        </nav>
+        <div class="about">
+            <div class="about_img"></div>
+            <h2>Hi, I'm Azolia! I'm a UX designer who loves to build digital interfaces that are thoughtful, intuitive, and uplifting.</h2>
+            <p>
+                Long before I became a designer, I had always appreciated design in many forms: architecture, graphic design, and industrial design, in particular. Admiring the work of designers like Dieter Rams, Naoto Fukasawa, and Jonathan Ive introduced me to the idea that ordinary products can be beautiful, timeless, and elevate a person's everyday experience.
+                <br><br>
+                It wasn't until I took a Design Thinking course in college that I realized that I too could become a designer whose work had a positive impact on others. I began to see design not just as a means of manufacturing delight, but as a powerful tool to create change, solve deep-rooted problems, and improve lives. I was especially drawn to digital product design because of the pervasiveness of web and mobile apps in our daily lives, as well as the ability to rapidly iterate on digital products.
+                <br><br>
+                Since graduating from Smith College with a degree in Computer Science, I've had the opportunity to do end-to-end product design work for various startups in the Bay Area. I'm currently working as a UX Designer at Accenture Interactive in New York City. When I'm not at my computer, you might find me baking macarons, listening to my current favorite podcast Conan O'Brien Needs a Friend, or exploring new cafes on my quest to find the best boba in NYC.
+            </p>
+            <h3>Skills & Tools</h3>
+            <p>
+                User Research, Usability Testing, Wireframing, Prototyping, Responsive Web Design, Visual Design, Interaction Design, Illustration, Branding, HTML/CSS, Sketch, Figma, Adobe CC, Invision, Zeplin, Abstract
+            </p>
+            <div class="logo_article"></div>
+        </div>
+        <div class="collection">
+            <span></span>
+        </div>
+        <footer>
+            <div class="footer_right">
+                <h1><div class="footer_logo"></div>Azolia.Design</h1>
+                <a href="about.html"><i class="fas fa-smile"></i>About</a>
+                <a href="http://azolia.design/#work"><i class="fas fa-pencil-ruler"></i>Works</a>
+            </div>
+            <div class="footer_left">
+                <h1>Let's get in touch!</h1>
+                <a href="#"><i class="fas fa-envelope"></i>contact@azolia.design</a>
+                <a href="#"><i class="fas fa-phone"></i>+84 909 000 999</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+
+        var checkbox = document.querySelector('input[name=theme]');
+
+        checkbox.addEventListener('change', function() {
+            if(this.checked) {
+                trans()
+                document.documentElement.setAttribute('data-theme', 'light')
+            } else {
+                trans()
+                document.documentElement.setAttribute('data-theme', 'dark')
+            }
+        })
+
+        let trans = () => {
+            document.documentElement.classList.add('transition');
+            window.setTimeout(() => {
+                document.documentElement.classList.remove('transition')
+            }, 1000)
+        } 
+
+    </script>
+</body>
+</html>
