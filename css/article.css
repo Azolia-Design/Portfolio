@@ -44,8 +44,8 @@ article img.article {
 article .overview {
   margin: 20px 0 0;
   width: calc(100% - 20px);
-  -webkit-box-shadow: inset 10px 10px 20px var(--neu-one), inset -10px -10px 20px var(--neu-two);
-          box-shadow: inset 10px 10px 20px var(--neu-one), inset -10px -10px 20px var(--neu-two);
+  -webkit-box-shadow: inset 10px 10px 20px var(--neu-one), inset -10px -10px 20px var(--neu-two), 1px 1px 1px var(--neu-hl), -1px -1px 1px var(--neu-sd);
+          box-shadow: inset 10px 10px 20px var(--neu-one), inset -10px -10px 20px var(--neu-two), 1px 1px 1px var(--neu-hl), -1px -1px 1px var(--neu-sd);
   border-radius: 10px;
   padding: 60px 25px 12px;
 }
