@@ -14,8 +14,8 @@
 <body>
     <div class="container">
         <nav>
-            <div class="logo"><a href="index.html"></a></div>
-            <div class="icon"><a href="index.html"></a></div>
+            <div class="logo"><a href="https://azolia.design/"></a></div>
+            <div class="icon"><a href="https://azolia.design/"></a></div>
             <div class="menu">
                 <ul>
                     <li>
@@ -71,7 +71,7 @@
                         <li>Illustration and character design.</li>
                         <li>Collaboration with other publications.</li>
                     </ul> 
-                    <a href="#" class="button">Read the comics</a>
+                    <a href="article.html" class="button">Read the comics</a>
                 </div>
             </div>
             <div class="work_item">
@@ -146,27 +146,7 @@
         </footer>
     </div>
 
-    <script>
-
-        var checkbox = document.querySelector('input[name=theme]');
-
-        checkbox.addEventListener('change', function() {
-            if(this.checked) {
-                trans()
-                document.documentElement.setAttribute('data-theme', 'light')
-            } else {
-                trans()
-                document.documentElement.setAttribute('data-theme', 'dark')
-            }
-        })
-
-        let trans = () => {
-            document.documentElement.classList.add('transition');
-            window.setTimeout(() => {
-                document.documentElement.classList.remove('transition')
-            }, 1000)
-        } 
-
-    </script>
+    <script src="js/main.js"></script>
+    
 </body>
 </html>

@@ -14,8 +14,8 @@
 <body>
     <div class="container">
         <nav>
-            <div class="logo"><a href="index.html"></a></div>
-            <div class="icon"><a href="index.html"></a></div>
+            <div class="logo"><a href="https://azolia.design/"></a></div>
+            <div class="icon"><a href="https://azolia.design/"></a></div>
             <div class="menu">
                 <ul>
                     <li>
@@ -65,8 +65,8 @@
                     <br><br>
                     Our high-level objectives (which we further defined based on research insights) were to:
                 </p>
-                <img src="asset/work_img_04.jpg" alt="" class="content">
-                <h4 class="caption">Caption for the picture of a telescope as you can see above.</h4>
+                <img src="asset/work_caption.jpg" alt="" class="content">
+                <h4 class="caption">Photo by Zhang Kenny on Unsplash</h4>
                 <span class="caption"></span>
                 <h3>Research & Discover</h3>
                 <p>
@@ -76,6 +76,31 @@
                     <br><br>
                     They are often more motivated to boycott unethical companies than to actively support ethical ones
                     They use word-of-mouth, social media, and news sources to gather information about companies' behaviors and ethics.
+                </p>
+                <h3>Scoping & Ideation</h3>
+                <p>
+                    Our research led us to prioritize several main issues that needed to be addressed in the existing product:
+                    <br><br>
+                    Favorited companies. This would allow users to track or save companies for future reference and give SHEchange metrics on which companies were popular or trending amongst users. With the addition of a community feature, users would be able to display the collection of companies they support on their public profile to encourage others to shop from them as well.
+                    <br><br>
+                    Blacklisted companies. In the same vein, users could save the companies they have chosen to boycott.
+                    <br><br>
+                    Favorited products. Because SHEchange generates revenue from affiliate links, it was essential that we allow users to easily save and locate the products they were considering for purchase at a later time.
+                    <br><br>
+                    Improved ranking of causes. A logged-in user would see personalized ratings on a company profile based on their most valued causes. Although we wanted users to identify all of the causes they were interested in, we also wanted them to select their top three causes in order to display those ratings on the Chrome extension, on which there was limited real estate. This presented the unique challenge of designing a two-tiered rating system. This would also allow SHEchange to track which causes are the most popular among their users.
+                </p>
+                <h3>Prototyping & Testing</h3>
+                <p>
+                    I created a clickable prototype to test my potential solutions. Although the results of my lo-fi prototype were inconclusive, my mid-fi prototype (shown above) generated a lot of rich feedback, revealing a number of issues:
+                </p>
+                <img src="asset/work_caption_2.jpg" alt="" class="content">
+                <h4 class="caption">Photo by Andrey Zvyagintsev on Unsplash</h4>
+                <span class="caption"></span>
+                <h3>Iteration & Testing</h3>
+                <p>
+                    The myriad weaknesses exposed in the previous round of testing gave me a lot to improve on. I explored many more possible solutions for the cause ranking system, a few of which are shown below:
+                    <br><br>
+                    Ultimately, a decision was made by the PM to only prompt the user to select a total of three causes, however, the client was presented with some of the more promising solutions for possible future implementation.
                 </p>
                 <div class="logo_article"></div>
                 <span></span>
@@ -108,27 +133,7 @@
         </footer>
     </div>
 
-    <script>
-
-        var checkbox = document.querySelector('input[name=theme]');
-
-        checkbox.addEventListener('change', function() {
-            if(this.checked) {
-                trans()
-                document.documentElement.setAttribute('data-theme', 'light')
-            } else {
-                trans()
-                document.documentElement.setAttribute('data-theme', 'dark')
-            }
-        })
-
-        let trans = () => {
-            document.documentElement.classList.add('transition');
-            window.setTimeout(() => {
-                document.documentElement.classList.remove('transition')
-            }, 1000)
-        } 
-
-    </script>
+    <script src="js/main.js"></script>
+    
 </body>
 </html>
