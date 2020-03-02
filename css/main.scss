@@ -158,11 +158,11 @@ nav {
             margin-left: 30px;
             color: var(--nav-color); 
             font-size: 20px;
-            display: none;
+            
         }
 
         li {
-           display: none;
+            display: none;
         }
 
         input[type=checkbox]{
@@ -182,7 +182,7 @@ nav {
             border-radius: 9px;
             position: relative;
             margin-left: 18px;
-            display: block;
+            
         }
     
         label:after {
@@ -402,6 +402,7 @@ footer {
                 background: var(--icon_nav) no-repeat center center;
                 background-size: contain;
                 margin-right: 18.65px;
+                vertical-align: baseline; 
             }
 
             font-weight: 500;
@@ -409,7 +410,7 @@ footer {
             line-height: 29px;
             color: var(--primary);
             margin-bottom: 65px;
-            vertical-align: baseline; 
+
         }
 
         a {

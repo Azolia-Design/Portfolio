@@ -156,7 +156,6 @@ nav .menu i.bar {
   margin-left: 30px;
   color: var(--nav-color);
   font-size: 20px;
-  display: none;
 }
 
 nav .menu li {
@@ -180,7 +179,6 @@ nav .menu label {
   border-radius: 9px;
   position: relative;
   margin-left: 18px;
-  display: block;
 }
 
 nav .menu label:after {
@@ -357,7 +355,6 @@ footer .footer_right h1 {
   line-height: 29px;
   color: var(--primary);
   margin-bottom: 65px;
-  vertical-align: baseline;
 }
 
 footer .footer_right h1 .footer_logo {
@@ -367,6 +364,7 @@ footer .footer_right h1 .footer_logo {
   background: var(--icon_nav) no-repeat center center;
   background-size: contain;
   margin-right: 18.65px;
+  vertical-align: baseline;
 }
 
 footer .footer_right a {
