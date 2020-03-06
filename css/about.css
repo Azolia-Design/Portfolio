@@ -1,6 +1,6 @@
 .about {
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 80px 10px 0;
   max-width: 470px;
 }
 
@@ -11,8 +11,8 @@
   margin: 120px auto 80px;
   background: var(--hero_img) no-repeat top center;
   background-size: cover;
-  -webkit-box-shadow: 9px 9px 18px var(--neu-one), -9px -9px 18px var(--neu-two);
-          box-shadow: 9px 9px 18px var(--neu-one), -9px -9px 18px var(--neu-two);
+  -webkit-box-shadow: 9px 9px 18px var(--neu-one), -9px -9px 18px var(--neu-two), inset 1px 1px 1px var(--neu-hl), inset -1px -1px 1px var(--neu-sd);
+          box-shadow: 9px 9px 18px var(--neu-one), -9px -9px 18px var(--neu-two), inset 1px 1px 1px var(--neu-hl), inset -1px -1px 1px var(--neu-sd);
   border-radius: 150px;
 }
 
@@ -59,7 +59,7 @@
 
 @media only screen and (min-width: 768px) {
   .about {
-    padding: 0 40px;
+    padding: 99px 40px 0;
     max-width: 630px;
   }
   .about .about_img {

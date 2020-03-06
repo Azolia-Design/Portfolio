@@ -1,5 +1,6 @@
 article {
-    margin: 120px auto 0;
+    padding-top: 120px;
+    margin: 80px auto 0;
     display: grid;
     justify-items: center;
 
@@ -175,7 +176,8 @@ article {
 
 @media only screen and (min-width: 768px) {
     article {
-        margin: 140px auto 0;
+        padding-top: 140px;
+        margin: 99px auto 0;
 
         h1 {
             font-size: 48px;
@@ -305,7 +307,8 @@ article {
 
 @media only screen and (min-width: 1660px) {
     article {
-        margin: 200px auto 0;
+        padding-top: 200px;
+        margin: 99px auto 0;
 
         h1 {
             font-size: 64px;
@@ -327,7 +330,8 @@ article {
 
         .overview {
             margin: 50px 0 0;
-            width: 100%;
+            width: calc(100% - 140px);
+            max-width: 100%;
             padding: 80px 70px 0;
             
             .overview_content {
