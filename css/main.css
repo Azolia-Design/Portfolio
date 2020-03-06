@@ -397,7 +397,7 @@ footer .footer_right h1 {
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
-  color: var(--primary);
+  color: var(--nav-color);
   margin-bottom: 65px;
 }
 
@@ -416,7 +416,7 @@ footer .footer_right a {
   margin-bottom: 36px;
   text-decoration: none;
   color: var(--primary);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
 }
@@ -425,7 +425,7 @@ footer .footer_right a i {
   font-size: 24px;
   line-height: 24px;
   text-align: left;
-  color: var(--primary);
+  color: var(--nav-color);
   width: 45px;
 }
 
@@ -437,7 +437,7 @@ footer .footer_left h1 {
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
-  color: var(--primary);
+  color: var(--nav-color);
   margin-bottom: 65px;
 }
 
@@ -446,7 +446,7 @@ footer .footer_left a {
   margin-bottom: 36px;
   text-decoration: none;
   color: var(--primary);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   line-height: 22px;
 }
@@ -455,7 +455,7 @@ footer .footer_left a i {
   font-size: 24px;
   line-height: 24px;
   text-align: left;
-  color: var(--primary);
+  color: var(--nav-color);
   width: 45px;
 }
 
