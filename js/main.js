@@ -16,6 +16,13 @@ checkBox.addEventListener('change', function () {
   }
 });
 
+let trans = () => {
+  document.documentElement.classList.add('transition');
+  window.setTimeout(() => {
+  document.documentElement.classList.remove('transition')
+  }, 1000)
+}
+
 $(window).scroll(function(){
   if ($(this).scrollTop() > 20) {
      $('#navbar').addClass('scroll');
@@ -24,9 +31,13 @@ $(window).scroll(function(){
   }
 });
 
-let trans = () => {
-  document.documentElement.classList.add('transition');
-  window.setTimeout(() => {
-  document.documentElement.classList.remove('transition')
-  }, 1000)
-} 
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav_bot").style.bottom = "0";
+  } else {
+    document.getElementById("nav_bot").style.bottom = "-72px";
+  }
+  prevScrollpos = currentScrollPos;
+}
