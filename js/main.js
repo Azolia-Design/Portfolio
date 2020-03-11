@@ -31,13 +31,20 @@ $(window).scroll(function(){
   }
 });
 
+var x = window.matchMedia("(min-width: 768px)")
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("nav_bot").style.bottom = "0";
-  } else {
-    document.getElementById("nav_bot").style.bottom = "-72px";
+  } 
+  else {
+    if (x.matches) { // If media query matches
+      document.getElementById("nav_bot").style.bottom = "-72px";
+    } else {
+      document.getElementById("nav_bot").style.bottom = "-60px";
+    }
   }
   prevScrollpos = currentScrollPos;
 }
